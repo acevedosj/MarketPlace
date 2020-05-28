@@ -57,4 +57,14 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Products.sql" />
+    <Build Include="ProductCategories.sql" />
+    <Build Include="sp_Product_FindCategorytByCode.sql" />
+    <Build Include="sp_Product_Save.sql" />
+    <Build Include="sp_Product_FindProductByCode.sql" />
+    <Build Include="sp_Product_List.sql" />
+    <Build Include="sp_ProductCategory_List.sql" />
+    <Build Include="sp_ProductCategory_Save.sql" />
+  </ItemGroup>
 </Project>
