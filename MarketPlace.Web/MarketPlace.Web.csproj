@@ -67,13 +67,81 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app.js" />
+    <Content Include="content\toastr.css" />
+    <Content Include="content\toastr.min.css" />
+    <Content Include="Controllers\Confirm.js" />
+    <Content Include="Controllers\Product.js" />
+    <Content Include="Controllers\ProductCategory.js" />
+    <Content Include="Controllers\Start.js" />
+    <Content Include="css\base.css" />
+    <Content Include="Images\producto.png" />
+    <Content Include="Index.html" />
+    <Content Include="libs\angular\angular.js" />
+    <Content Include="libs\angular\angular.min.js" />
+    <Content Include="libs\bootstrap-4.3.1-dist\css\bootstrap-grid.css" />
+    <Content Include="libs\bootstrap-4.3.1-dist\css\bootstrap-grid.min.css" />
+    <Content Include="libs\bootstrap-4.3.1-dist\css\bootstrap-reboot.css" />
+    <Content Include="libs\bootstrap-4.3.1-dist\css\bootstrap-reboot.min.css" />
+    <Content Include="libs\bootstrap-4.3.1-dist\css\bootstrap.css" />
+    <Content Include="libs\bootstrap-4.3.1-dist\css\bootstrap.min.css" />
+    <Content Include="libs\bootstrap-4.3.1-dist\js\bootstrap.bundle.js" />
+    <Content Include="libs\bootstrap-4.3.1-dist\js\bootstrap.bundle.min.js" />
+    <Content Include="libs\bootstrap-4.3.1-dist\js\bootstrap.js" />
+    <Content Include="libs\bootstrap-4.3.1-dist\js\bootstrap.min.js" />
+    <Content Include="libs\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="libs\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="libs\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="libs\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="libs\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="libs\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="libs\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="libs\jquery\dist\jquery.js" />
+    <Content Include="libs\jquery\dist\jquery.min.js" />
+    <Content Include="Scripts\jquery-1.6.3.js" />
+    <Content Include="Scripts\jquery-1.6.3.min.js" />
+    <Content Include="Scripts\toastr.js" />
+    <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Services\ShoppingCart.js" />
+    <Content Include="Templates\404.html" />
+    <Content Include="Templates\Confirm.html" />
+    <Content Include="Templates\Product.html" />
+    <Content Include="Templates\ProductCategory.html" />
+    <Content Include="Templates\Start.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\toastr.less" />
+    <Content Include="content\toastr.scss" />
+    <Content Include="libs\angular\angular.min.js.map" />
+    <Content Include="libs\bootstrap-4.3.1-dist\css\bootstrap-grid.css.map" />
+    <Content Include="libs\bootstrap-4.3.1-dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="libs\bootstrap-4.3.1-dist\css\bootstrap-reboot.css.map" />
+    <Content Include="libs\bootstrap-4.3.1-dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="libs\bootstrap-4.3.1-dist\css\bootstrap.css.map" />
+    <Content Include="libs\bootstrap-4.3.1-dist\css\bootstrap.min.css.map" />
+    <Content Include="libs\bootstrap-4.3.1-dist\js\bootstrap.bundle.js.map" />
+    <Content Include="libs\bootstrap-4.3.1-dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="libs\bootstrap-4.3.1-dist\js\bootstrap.js.map" />
+    <Content Include="libs\bootstrap-4.3.1-dist\js\bootstrap.min.js.map" />
+    <Content Include="libs\bootstrap\.bower.json" />
+    <Content Include="libs\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="libs\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="libs\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="libs\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="libs\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="libs\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="libs\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="libs\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="libs\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="libs\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="libs\jquery\.bower.json" />
+    <Content Include="libs\jquery\dist\jquery.min.map" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\MarketPlace20 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -96,7 +164,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>51035</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44352/</IISUrl>
+          <IISUrl>https://localhost:44353/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>https://localhost:44353/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

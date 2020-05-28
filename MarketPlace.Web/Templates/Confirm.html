@@ -1,0 +1,17 @@
+﻿<h1>
+    Purchase confirmation
+</h1>
+
+<h2>Products:</h2>
+
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="product in products">
+        {{product.Name}}
+        <strong class="pull-right">${{product.UnitPrice}}</strong>
+    </li>
+
+</ul>
+
+<h2>
+    Total purchase: ${{total}}
+</h2>

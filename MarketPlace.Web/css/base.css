@@ -1,0 +1,34 @@
+.product {
+    margin: 10px;
+    margin-bottom:10px;
+    height:300px;
+}
+.btnSearch {
+    margin-top: 19px;
+    margin-left: -27px;
+}
+.hidep{
+    opacity: 0.4;
+}
+.product .image {
+    text-align: center;
+    padding: 13px 0;
+    border: solid 1px;
+}
+
+.product p {
+    font-size: 12px;
+}
+
+.product .price {
+    font-weight: bold;
+    font-size: 25px;
+    border-bottom: 1px solid;
+    text-align: right;
+    margin-bottom: 19px;
+}
+.cart{
+    border: solid 1px silver;
+    padding: 10px;
+    border-radius: 7px;
+}

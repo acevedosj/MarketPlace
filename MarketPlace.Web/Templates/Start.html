@@ -1,0 +1,82 @@
+﻿<div class="row">
+    <div class="col-sm-9">
+
+        <div class="navbar-light">
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control" id="Name" ng-required="true"  maxlength="20" ng-model="ProductName" placeholder="Product Name">
+
+                </div>
+                <div class="col-sm-1">
+                    <button class="btn btn-primary btnSearch" ng-click="searchByName()" ><span class="fa fa-search fa-lg" aria-hidden="true"></span></button>
+                </div>
+
+                <div class="col-sm-3">
+                    <label for="CategoryId">Product Category</label>
+                    <select class="form-control" id="CategoryId" ng-model="CategoryId" ng-change="searchByCategory(CategoryId)">
+
+                        <option ng-value="opt.ProductCategoryId" ng-repeat="opt in ProductCategory">{{opt.Name}}</option>
+
+                    </select>
+                </div>
+
+
+
+            </div>
+           
+
+
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+
+
+
+    <div class="col-sm-9">
+
+        <div class="push-left well col-sm-3 product" ng-repeat="product in products" ng-class="{'hidep' : product.hide}">
+
+            <h4>{{product.Name}}</h4>
+
+            <div class="image">
+                <img ng-src="{{product.Image}}" width="50">
+            </div>
+
+            <div class="price">{{product.UnitPrice | currency}}</div>
+
+            <p>
+                {{product.Description}}
+            </p>
+
+            <button class="btn btn-danger" ng-click="toBuy(product)" ng-disabled="product.hide">buy</button>
+
+        </div>
+
+    </div>
+
+    <div class="col-sm-3 cart">
+
+        <h4><i class="fa fa-shopping-cart"></i>Shopping Cart</h4>
+
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="product in cart">
+                {{product.Name}}
+                <strong class="pull-right">{{product.UnitPrice | currency }} <a ng-click="remove(product)"><i class="fa fa-trash"></i></a></strong>
+            </li>
+        </ul>
+
+        <h2>Total: ${{total()}}</h2>
+
+        <button class="btn btn-danger" ng-click="finalize()">
+            Finalize purchase
+        </button>
+
+    </div>
+
+
+
+</div>

@@ -1,0 +1,21 @@
+﻿<div class="row">
+
+
+
+    <div class="cols-9">
+
+        <form name="myForm" class="well">
+            <div class="form-group">
+                <label for="Code">Code</label>
+                <input type="text" class="form-control" id="Code" ng-required="true" oninvalid="this.setCustomValidity('This field is required')" oninput="setCustomValidity('')" maxlength="5" ng-model="ProductCategory.Code" placeholder="Category code">
+            </div>
+            <div class="form-group">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" id="Name" ng-required="true" oninvalid="this.setCustomValidity('This field is required')" oninput="setCustomValidity('')" maxlength="20" ng-model="ProductCategory.Name" placeholder="Category Name">
+            </div> 
+
+            <button class="btn btn-primary" ng-click="saveProductCategory()" ng-disabled="isSend">Submit</button>
+        </form>
+    </div>
+
+</div>
