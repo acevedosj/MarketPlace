@@ -6,6 +6,7 @@ The project is deployed in Azure (Note: it will be available until June 7)
 As an AppService the urls respectively are:
 * website https://marketplace20.azurewebsites.net/
 * api site https://merkaplaceapi.azurewebsites.net
+
 Microsoft Azure SQL Database is used for data storage
 
 ## Features
