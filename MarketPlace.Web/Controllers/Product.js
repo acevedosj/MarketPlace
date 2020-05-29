@@ -49,7 +49,7 @@
             $scope.ClearForm();
 
         }).error(function (data, status, headers, config) {
-            toastr.error(data.Message);
+            toastr.error(data);
             $scope.isSend = false;
 
         });

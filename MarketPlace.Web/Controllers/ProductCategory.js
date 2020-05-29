@@ -27,7 +27,7 @@
             }).
             error(function (data, status, headers, config) {
 
-                toastr.error(data.Message);
+                toastr.error(Message);
                 $scope.isSend = false;
 
             })
