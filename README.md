@@ -4,8 +4,8 @@
 Product catalog and shopping cart with Angular.JS and ASP.NET. 
 The project is deployed in Azure (Note: it will be available until June 7)
 As an AppService the urls respectively are:
-* website https://marketplace20.azurewebsites.net/
-* api site https://merkaplaceapi.azurewebsites.net
+* website https://marketplace1.azurewebsites.net
+* api site https://marketplace1.azurewebsites.net
 
 Microsoft Azure SQL Database is used for data storage
 
@@ -29,7 +29,7 @@ Microsoft Azure SQL Database is used for data storage
 * .Net Frameworks 4.6.1
 
 ## Deployment
-To deploy the project locally, it is necessary to have IIS (internet information server) and SQL Server.
+To locally deploy the project, it is necessary to have IIS (internet information server) and SQL Server.
 In sql server create a database called MarketPlace and in this run the scripts that
 are in the MarketPlace.Database database project, running the scripts
 in the following order:
