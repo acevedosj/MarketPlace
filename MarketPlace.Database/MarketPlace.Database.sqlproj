@@ -56,15 +56,24 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Procedures" />
+    <Folder Include="Scripts" />
+    <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Products.sql" />
-    <Build Include="ProductCategories.sql" />
-    <Build Include="sp_Product_FindCategorytByCode.sql" />
-    <Build Include="sp_Product_Save.sql" />
-    <Build Include="sp_Product_FindProductByCode.sql" />
-    <Build Include="sp_Product_List.sql" />
-    <Build Include="sp_ProductCategory_List.sql" />
-    <Build Include="sp_ProductCategory_Save.sql" />
+    <Build Include="Procedures\sp_ProductCategory_Save.sql" />
+    <Build Include="Procedures\sp_ProductCategory_List.sql" />
+    <Build Include="Procedures\sp_Product_Save.sql" />
+    <Build Include="Procedures\sp_Product_List.sql" />
+    <Build Include="Procedures\sp_Product_FindProductByCode.sql" />
+    <Build Include="Procedures\sp_Product_FindCategorytByCode.sql" />
+    <Build Include="Tables\Products.sql" />
+    <None Include="Scripts\ProductCategories.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\ProductCategories.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\Insert_Product.sql" />
   </ItemGroup>
 </Project>
