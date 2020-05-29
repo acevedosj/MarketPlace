@@ -1,4 +1,4 @@
-﻿miAppAngular.controller('Product', function ($scope, $http,ShoppingCart) {
+﻿miAppAngular.controller('Product', function ($scope, $http, ConnectApi) {
 
     $scope.isSend = false;
 
@@ -39,7 +39,7 @@
 
         $scope.promise = $http({
             method: 'POST',
-            url: 'https://merkaplaceapi.azurewebsites.net/api/Products/Add',
+            url: ConnectApi.Connection + '/api/Products/Add',
             headers: BuildHeaders,
             transformRequest: angular.identity,
             data: $scope.data
@@ -47,11 +47,11 @@
             toastr.success('saved product.');
             $scope.isSend = false;
             $scope.ClearForm();
-            console.log("ok")
+
         }).error(function (data, status, headers, config) {
             toastr.error(data.Message);
             $scope.isSend = false;
-            console.log("error")
+
         });
        
     }
@@ -70,17 +70,15 @@
     }
 
     $scope.ProductCategory = function () {        
-        //https://localhost:44381
-        $http.get('https://merkaplaceapi.azurewebsites.net/api/ProductCategory/List').
+
+        $http.get(ConnectApi.Connection + '/api/ProductCategory/List').
             success(function (data, status, headers, config) {
-                // this callback will be called asynchronously
-                // when the response is available
+
                 $scope.ProductCategory = data;
             }).
             error(function (data, status, headers, config) {
                 toastr.error(data.Message);
-                // called asynchronously if an error occurs
-                // or server returns response with an error status.
+
             });
     }
     $scope.ProductCategory();

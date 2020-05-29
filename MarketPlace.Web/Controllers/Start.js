@@ -1,20 +1,18 @@
-﻿miAppAngular.controller('Start', function ($scope, $location, $http, ShoppingCart) {
+﻿miAppAngular.controller('Start', function ($scope, $location, $http, ShoppingCart, ConnectApi) {
 
     $scope.ProductCategory = function () {
 
         var item = { Code: "01", Name: "All", ProductCategoryId: "*" }
 
-        $http.get('https://merkaplaceapi.azurewebsites.net/api/ProductCategory/List').
+        $http.get(ConnectApi.Connection + '/api/ProductCategory/List').
             success(function (data, status, headers, config) {
-                // this callback will be called asynchronously
-                // when the response is available
+
                 $scope.ProductCategory = data;
                 $scope.ProductCategory.push(item);
             }).
             error(function (data, status, headers, config) {
                 toastr.error(data.Message);
-                // called asynchronously if an error occurs
-                // or server returns response with an error status.
+
             });
     }
     $scope.ProductCategory();
@@ -22,16 +20,13 @@
 
     $scope.getProduts = function () {
 
-        $http.get('https://merkaplaceapi.azurewebsites.net/api/Products/List').
+        $http.get(ConnectApi.Connection + '/api/Products/List').
             success(function (data, status, headers, config) {
-                // this callback will be called asynchronously
-                // when the response is available
                 $scope.products = data;
                 $scope.originProducts = data;
             }).
             error(function (data, status, headers, config) {
-                // called asynchronously if an error occurs
-                // or server returns response with an error status.
+
             });      
        
     }

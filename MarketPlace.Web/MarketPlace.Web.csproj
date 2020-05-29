@@ -102,6 +102,7 @@
     <Content Include="Scripts\jquery-1.6.3.min.js" />
     <Content Include="Scripts\toastr.js" />
     <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Services\ConnectApi.js" />
     <Content Include="Services\ShoppingCart.js" />
     <Content Include="Templates\404.html" />
     <Content Include="Templates\Confirm.html" />
