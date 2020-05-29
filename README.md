@@ -5,7 +5,7 @@ Product catalog and shopping cart with Angular.JS and ASP.NET.
 The project is deployed in Azure (Note: it will be available until June 7)
 As an AppService the urls respectively are:
 * website https://marketplace1.azurewebsites.net
-* api site https://marketplace1.azurewebsites.net
+* api site https://marketplaceapi1.azurewebsites.net
 
 Microsoft Azure SQL Database is used for data storage
 
