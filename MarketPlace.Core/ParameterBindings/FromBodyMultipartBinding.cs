@@ -82,12 +82,8 @@ namespace MarketPlace.Core.ParameterBindings
             }
             Func<string, object> item = this.ContentTypeResolvers[str1];
             actionContext.ActionArguments[base.Descriptor.ParameterName] = item(str);
-            request = null;
-            str = null;
-            str1 = null;
-            item = null;
         }
 
-       
+
     }
 }

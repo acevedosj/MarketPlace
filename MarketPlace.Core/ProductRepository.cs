@@ -22,7 +22,6 @@ namespace MarketPlace.Core
 
         public ProductRepository(string connectionString)
         {
-            string connectionString2 = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
             this._connectionString = connectionString;
         }
 
